@@ -32,7 +32,7 @@ const personRouter =require('./router/personRouter');
 const menuItemRoutes =require('./router/menuItemRoutes');
 
 
-app.use('/person',localAuthMiddleware,personRouter);
+app.use('/person',personRouter);
 
 app.use('/menuu',menuItemRoutes);
 app.listen(PORT,()=>{
